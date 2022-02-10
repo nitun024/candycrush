@@ -9,11 +9,11 @@ import org.testng.annotations.AfterSuite;
 
 public class BaseTest {
 
-    public static AppiumDriver<MobileElement> driver = DriverClass.getAndroidDriver();
-    public static Action action = new Action();
-    public static Homepage homepage = new Homepage();
-    public static Gamepage gamepage = new Gamepage();
-    public static Termspage termspage = new Termspage();
+    private AppiumDriver<MobileElement> driver = DriverClass.getAndroidDriver();
+    public Action action = new Action();
+    public Homepage homepage = new Homepage();
+    public Gamepage gamepage = new Gamepage();
+    public Termspage termspage = new Termspage();
 
     @AfterSuite
     public void teardown() {
